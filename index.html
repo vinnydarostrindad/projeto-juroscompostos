@@ -4,26 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Juros Compostos - Simulação</title>
+
+    <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
     
     <header>
         <h1>Ciclic</h1>
     </header>
-    <main class="simulator" id="simulator">
-        <h2>Simulador</h2>
-        <form>
-            <label for="name">Nome:</label> <input type="text" name="name" id="name"> <br><br>
-            <label for="monthlyPay">Mensalidade:</label> <input type="text" name="monthlyPay" id="monthlyPay"> <br><br>
-            <label for="interestRate">Taxa de juros:</label> <input type="text" name="interestRate" id="interestRate"> <br><br>
-            <label for="contributionTime">Tempo de contribuição:</label> <input type="text" name="contributionTime" id="contributionTime"> <br><br>
-            <input type="button" value="Simular">
+    <main class="simulatorBox" id="simulator">
+        <h2>Simulador de Juros Compostos</h2>
+        <form action="http://api.mathjs.org/v4/" method="post" id="simulationDatas" autocomplete="off">
+            <div>
+                <label for="name">Nome:</label>
+                <input type="text" name="name" id="name">
+            </div>
+            <div>
+                <label for="monthlyPay">Mensalidade:</label>
+                <div class="monthlyPay">
+                    <span>R$</span><input type="number" name="monthlyPay" id="monthlyPay">
+                </div>
+            </div>
+            <div>
+                <label for="interestRate">Taxa de juros anual:</label>
+                <div class="interestRate">
+                    <span>%</span><input type="number" name="interestRate" id="interestRate">
+                </div>
+            </div>
+            <div>
+                <label for="contributionTime">Tempo de contribuição:</label>
+                <div class="contributionTime">
+                    <input type="number" name="contributionTime" id="contributionTime">
+                    <select name="type" id="type">
+                        <option value="month">Mês</option>
+                        <option value="year">Ano</option>
+                    </select>
+                </div>
+            </div>
+            <input type="submit" value="Simular">
         </form>
     </main>
+
     <div class="simulationAnswer">
-        <p>Olá Funlano, investindo R$X todo mês, você terá R$Y em Z anos</p>
+        <h3 id="personName">Olá Fulano</h3>
+        <p id="results">Investindo R$X todo mês, você terá R$Y em Z anos</p>
+        <p id="totalInvested">Você investiu R$W</p>
         <button id="simulateAgainBtn">Simular Novamente</button>
     </div>
 
+    <script src="src/js/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,163 @@
+@import url(reset.css);
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e5e5e5;
+}
+
+header {
+    color: #fff;
+    background-color: rgb(0, 50, 0);
+}
+
+header h1 {
+    font-size: 62px;
+    text-align: center;
+    padding: 15px 0;
+}
+
+
+main.simulatorBox {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-color: rgba(0, 176, 0, 0.267);
+    width: fit-content;
+    padding: 25px;
+    border-radius: 8px;
+    transform: translate(-50%, -50%);
+
+    transition: left 500ms ease-in-out;
+}
+
+main.simulatorBox.showingAnswer {
+    left: 200px;
+    transform: translate(0, -50%);
+}
+
+.simulatorBox form > div {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin: 15px 0;
+}
+
+.simulatorBox form label {
+    font-size: 18px;
+}
+
+.simulatorBox form input#name {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.simulatorBox form .monthlyPay span, .simulatorBox form .interestRate span {
+    background-color: rgb(238, 238, 238);
+    padding: 7.5px 14px;
+    border: 1px solid rgb(208, 208, 208);
+    border-radius : 6px 0 0 6px;
+}
+
+.simulatorBox form .monthlyPay {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.simulatorBox form input#monthlyPay {
+    width: 100%;
+    border-radius : 0 6px 6px 0;
+}
+
+.simulatorBox form .interestRate {
+    display: flex;
+    align-items: center;
+    width: 63%;
+}
+
+.simulatorBox form input#interestRate {
+    width: 100%;
+    border-radius : 0 6px 6px 0;
+}
+
+.simulatorBox form div.contributionTime{
+    display: flex;
+    align-items: stretch;
+    width: 57.6%;
+}
+
+.simulatorBox form .contributionTime input#contributionTime {
+    width: 100%;
+    border-radius : 6px 0 0 6px;
+}
+
+.simulatorBox form .contributionTime select {
+    color: rgba(0, 176, 0);
+    border: 1px solid rgb(208, 208, 208);
+    border-radius: 0 6px 6px 0;
+    outline: none;
+}
+
+.simulatorBox form input[type="submit"] {
+    color: rgb(0, 106, 0);
+    background-color: rgba(0, 176, 0, 0.267);
+    font-size: 16px;
+    width: 100%;
+    padding: 7px 0;
+    border: 1px solid rgb(0, 50, 0);
+    outline: none;
+    transition: all 500ms ease;
+}
+
+.simulatorBox form input[type="submit"]:hover {
+    color: rgb(192, 255, 192);
+    background-color: rgb(0, 79, 0);
+}
+
+.simulationAnswer {
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-color: rgba(0, 176, 0, 0.267);
+    width: fit-content;
+    height: 326.2px;
+    padding: 25px;
+    border-radius: 8px;
+    transform: translate(-50%, -50%);
+
+    transition: left 500ms ease-in-out;
+}
+
+.simulationAnswer.showAnswer {
+    left: 850px;
+    transform: translate(0, -50%);
+}
+
+
+.simulationAnswer h3 {
+    font-size: 32px;
+}
+
+.simulationAnswer p {
+    font-size: 19.5px;
+}
+
+.simulationAnswer button {
+    color: rgb(0, 106, 0);
+    background-color: rgba(0, 176, 0, 0.267);
+    font-size: 16px;
+    width: 100%;
+    padding: 7px 0;
+    border: 1px solid rgb(0, 50, 0);
+    outline: none;
+    transition: all 500ms ease;
+}
+
+.simulationAnswer button:hover {
+    color: rgb(192, 255, 192);
+    background-color: rgb(0, 79, 0);
+}
