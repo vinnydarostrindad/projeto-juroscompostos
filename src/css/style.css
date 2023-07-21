@@ -3,6 +3,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #e5e5e5;
+    overflow: hidden;
 }
 
 header {
@@ -20,19 +21,18 @@ header h1 {
 main.simulatorBox {
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 55%;
     background-color: rgba(0, 176, 0, 0.267);
     width: fit-content;
     padding: 25px;
     border-radius: 8px;
     transform: translate(-50%, -50%);
 
-    transition: left 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
 }
 
 main.simulatorBox.showingAnswer {
-    left: 200px;
-    transform: translate(0, -50%);
+    left: 29%;
 }
 
 .simulatorBox form > div {
@@ -72,7 +72,7 @@ main.simulatorBox.showingAnswer {
 .simulatorBox form .interestRate {
     display: flex;
     align-items: center;
-    width: 63%;
+    width: 60.2%;
 }
 
 .simulatorBox form input#interestRate {
@@ -100,7 +100,7 @@ main.simulatorBox.showingAnswer {
 
 .simulatorBox form input[type="submit"] {
     color: rgb(0, 106, 0);
-    background-color: rgba(0, 176, 0, 0.267);
+    background-color: rgba(255, 255, 255, 0);
     font-size: 16px;
     width: 100%;
     padding: 7px 0;
@@ -115,35 +115,36 @@ main.simulatorBox.showingAnswer {
 }
 
 .simulationAnswer {
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     position: absolute;
-    left: 50%;
-    top: 50%;
+    left: 145%;
+    top: 55%;
     background-color: rgba(0, 176, 0, 0.267);
-    width: fit-content;
+    width: 500px;
     height: 326.2px;
     padding: 25px;
     border-radius: 8px;
     transform: translate(-50%, -50%);
 
-    transition: left 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
 }
 
 .simulationAnswer.showAnswer {
-    left: 850px;
-    transform: translate(0, -50%);
+    display: flex;
+    left: 71%;
 }
-
 
 .simulationAnswer h3 {
     font-size: 32px;
+    text-align: center;
 }
 
 .simulationAnswer p {
     font-size: 19.5px;
+    text-align: center;
 }
 
 .simulationAnswer button {
