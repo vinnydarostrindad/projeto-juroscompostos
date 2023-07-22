@@ -59,12 +59,17 @@ simulatorForm.onsubmit = async (e) => {
     buildHtml(personName, monthlyPay, finalValue, contributionTime)
 
     simulatorBox.classList.add('showingAnswer')
-    simulationAnswerBox.classList.add('showAnswer')
+    setTimeout(() => {
+        simulationAnswerBox.classList.add('showAnswer')
+    }, 500);
+
+    window.document.body.classList.add('increaseScreenHeight')
 }
 
 function simulateAgainBtn() {
     simulatorBox.classList.remove('showingAnswer')
     simulationAnswerBox.classList.remove('showAnswer')
+    window.document.body.classList.remove('increaseScreenHeight')
     simulatorForm['name'].value = ""
     simulatorForm['monthlyPay'].value = ""
     simulatorForm['interestRate'].value = ""

@@ -1,0 +1,56 @@
+@media (max-width: 1200px) {
+
+    body.increaseScreenHeight {
+        height: 127vh;
+    }
+
+    main.simulatorBox.showingAnswer {
+        top: 45%;
+        left: 50%;
+    }
+
+    .simulationAnswer {
+        display: none;
+    }
+
+    .simulationAnswer.showAnswer {
+        display: flex;
+        left: 50%;
+        top: 98%;
+    }
+}
+
+@media (max-width: 520px) {
+    body.increaseScreenHeight {
+        height: 144vh;
+    }
+
+    main.simulatorBox {
+        width: 95%;
+    }
+
+    .simulationAnswer {
+        width: 95%;
+    }
+
+    main.simulatorBox.showingAnswer {
+        top: 53%;
+    }
+    
+    .simulationAnswer.showAnswer {
+        top: 115%;
+    }
+
+    .simulatorBox form > div {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .simulatorBox form div.contributionTime{
+        width: 100%;
+    }
+
+    .simulatorBox form .interestRate {
+        width: 100%;
+    }
+}

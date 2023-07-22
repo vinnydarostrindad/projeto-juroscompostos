@@ -3,7 +3,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #e5e5e5;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 header {
@@ -23,7 +23,7 @@ main.simulatorBox {
     left: 50%;
     top: 55%;
     background-color: rgba(0, 176, 0, 0.267);
-    width: fit-content;
+    width: 508px;
     padding: 25px;
     border-radius: 8px;
     transform: translate(-50%, -50%);
@@ -32,7 +32,7 @@ main.simulatorBox {
 }
 
 main.simulatorBox.showingAnswer {
-    left: 29%;
+    left: 28%;
 }
 
 .simulatorBox form > div {
@@ -123,9 +123,9 @@ main.simulatorBox.showingAnswer {
     left: 145%;
     top: 55%;
     background-color: rgba(0, 176, 0, 0.267);
-    width: 500px;
+    width: 508px;
     height: 326.2px;
-    padding: 25px;
+    padding: 25px 25px 15px;
     border-radius: 8px;
     transform: translate(-50%, -50%);
 
@@ -133,8 +133,7 @@ main.simulatorBox.showingAnswer {
 }
 
 .simulationAnswer.showAnswer {
-    display: flex;
-    left: 71%;
+    left: 72%;
 }
 
 .simulationAnswer h3 {
