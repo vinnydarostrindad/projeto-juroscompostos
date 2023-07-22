@@ -12,7 +12,7 @@ async function sendToAPI(infosJson) {
         body: infosJson,
     };
 
-    const infosCaculated = await fetch("http://api.mathjs.org/v4/", config)
+    const infosCaculated = await fetch("https://api.mathjs.org/v4/", config)
     .then((response) => response.json())
     .then((response) => Number(response.result).toFixed(2))
 
