@@ -1,21 +1,49 @@
-# Desafio | Frontend Developer - Simulação Juros Compostos
+# Simulador de Juros Compostos
 
-## Descrição d0 Projeto
- Projeto realizado em HTML5, CSS3 e JS. O desafio foi passado pelo professor Thiago Medeiros no curso Formação Full Stack Javascript, e o desafio consistia em fazer uma página para realizar uma simulação de investimento utilizando juros compostos e a conta deveia ser feita por uma **API**.
+Landing page responsiva com HTML, CSS e JavaScript que simula investimentos com juros compostos através de um formulário interativo.
 
- ### Links Consultados
+## 📄 Descrição
 
-**Link da API**: http://api.mathjs.org/v4/
+O projeto apresenta uma página simples e intuitiva para simular o crescimento de um investimento mensal com juros compostos. O usuário informa o nome, o valor da mensalidade, a taxa de juros mensal e o tempo de contribuição (em meses ou anos), e o sistema retorna o valor final estimado, utilizando a API do Math.js para o cálculo matemático.
 
-### Desafios
+## 💡 Tecnologias utilizadas
 
-- Criar um formulário com os campos: **nome**, **mensalidade**, **taxa de juros**, **tempo de contribuição** e um **botão simular**;
-- Quando clicar em simular, é para fazer um *POST* para a *API* com uma certa estrutura *JSON*;
-- Fazer aparecer uma menssagem com **nome**, **mensalidade**, a **resquest da API** e o **tempo de contribuição**
+- HTML5
+- CSS3
+- JavaScript (Vanilla)
+- API Math.js (para cálculo dos juros compostos)
 
-## Acesso ao Projeto
+## 🖥️ Funcionalidades
 
-- Você pode [acessar o código fonte do projeto inicial](https://github.com/vinnydarostrindad/projeto-juroscompostos/tree/main) ou [baixá-lo](https://github.com/vinnydarostrindad/projeto-juroscompostos/archive/refs/heads/main.zip).
-- Ou acesse a página direto por [aquí](https://bit.ly/projetojuroscompostos-vinnydaros).
+- Formulário para entrada de dados do usuário
+- Cálculo automático de juros compostos
+- Exibição do valor acumulado e total investido
+- Layout adaptado para dispositivos móveis
 
-## Feito por Vinny Daros Trindade
+## 📱 Responsividade
+
+A aplicação é totalmente responsiva, com ajustes no layout para diferentes tamanhos de tela, garantindo uma boa experiência tanto em desktop quanto em dispositivos móveis.
+
+## 🧪 Como testar
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/seu-repositorio.git
+   ```
+2. Navegue até o diretório do projeto:
+   ```bash
+   cd seu-repositorio
+   ```
+3. Abra o arquivo `index.html` em seu navegador.
+
+## 📂 Estrutura do projeto
+
+```
+├── index.html
+├── src
+│   ├── css
+│   │   ├── style.css
+│   │   └── responsive.css
+│   └── js
+│       └── main.js
+```
