@@ -1,6 +1,6 @@
 # Simulador de Juros Compostos
 
-Landing page responsiva com HTML, CSS e JavaScript que simula investimentos com juros compostos através de um formulário interativo.
+Página responsiva com HTML, CSS e JavaScript que simula investimentos com juros compostos através de um formulário interativo.
 
 ## 📄 Descrição
 
@@ -28,11 +28,11 @@ A aplicação é totalmente responsiva, com ajustes no layout para diferentes ta
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seu-usuario/seu-repositorio.git
+   git clone https://github.com/vinnydarostrindad/projeto-juroscomposto.git
    ```
 2. Navegue até o diretório do projeto:
    ```bash
-   cd seu-repositorio
+   cd projeto-juroscomposto
    ```
 3. Abra o arquivo `index.html` em seu navegador.
 
