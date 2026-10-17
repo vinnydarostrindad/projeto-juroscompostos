@@ -2,6 +2,8 @@
 
 Página responsiva com HTML, CSS e JavaScript que simula investimentos com juros compostos através de um formulário interativo.
 
+- **DEMO**: https://vinnydarostrindad.github.io/projeto-juroscompostos/
+
 ## 📄 Descrição
 
 O projeto apresenta uma página simples e intuitiva para simular o crescimento de um investimento mensal com juros compostos. O usuário informa o nome, o valor da mensalidade, a taxa de juros mensal e o tempo de contribuição (em meses ou anos), e o sistema retorna o valor final estimado, utilizando a API do Math.js para o cálculo matemático.
